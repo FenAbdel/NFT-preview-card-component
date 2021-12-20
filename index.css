@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Outfit,sans-serif;
+}
+:root{
+    --mainbg: hsl(217, 54%, 11%);
+    --card:hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%) ;
+    --Cyan: hsl(178, 100%, 50%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+body{
+    background-color: var(--mainbg) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: hsl(215, 51%, 70%);
+}
+.card{
+    padding: 20px;
+    width: 250px;
+    background-color: var(--card);
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.title{
+    padding: 20px 0;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+.hr{
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid var(--line);
+    margin: 1em 0; padding: 0;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.etherium{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--Cyan);
+    font-weight: 600;
+    align-items:flex-start;
+}
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-weight: 600;
+}
+.imgeth{
+    margin-right: 5px;
+}
+.image1{
+    width:250px; 
+    height:250px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 2; 
+}
+.desc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+span{
+    color: white;
+}
+.image2{
+    border: 1px solid white;
+    border-radius: 50% ;
+    margin-right: 15px;
+}
+.title:hover,span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+    transform: 0.5s all;
+}
+
